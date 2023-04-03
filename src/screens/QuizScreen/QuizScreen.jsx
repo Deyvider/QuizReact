@@ -79,6 +79,9 @@ const QuizScreen = () => {
                 isSelected={selectedChoices.includes(choice)}
               />
             );
+            <Result
+              
+            />
           })}
           <view onClick={onSubmitPressedPressed}>
             <p className="Continue">Continuar</p>
