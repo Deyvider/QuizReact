@@ -1,6 +1,6 @@
 
 export default [
-    
+   
     {
         question: "¿Conoces los acordes básicos de guitarra (Do, Re, Mi, Fa, Sol, La, Si) tanto los  mayores y menores?",
         choices: [
@@ -91,10 +91,10 @@ export default [
             { choice: 'Acústico'}
          ],
          answer:  [
-            'Rock', ,
+            'Rock', 
             'Jazz',
             'Blues',
-            'Acústico'
+            'Acústico',
         ]
      },
 

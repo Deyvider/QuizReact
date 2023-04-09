@@ -1,9 +1,120 @@
-.level{
-    color: rgb(244, 0, 0);
-    font-size: 40px;
+#base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 20px;
 }
 
-.gen{
-    color:rgb(230, 2, 2);
-    font-size: 30px;
+  
+.titles{
+  width: 100vw;
+  text-align: center;
 }
+
+#h1{
+  color: #000;
+  font-size: 35px;
+  margin-bottom: 3px;
+  text-align: left;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.sub-title{
+  width: max-content ;
+  background-color: #E2ECFF;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 30px;
+  color: #000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.square-blue{
+  background-color: #E2ECFF;
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+h2{
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+ 
+.butons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+#btnContinue{
+  background-color: #364257;
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  cursor: pointer;
+  margin: 5px;
+  color: #E2ECFF;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnContinue:hover{
+  cursor: pointer;
+  padding: 10px;
+  background-color:#364257;
+  border-width: 0px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* #btnContinue_active{
+  width: 100%;
+  background-color:#364257;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 7px;
+  color:aliceblue;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+} */

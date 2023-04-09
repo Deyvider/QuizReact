@@ -1,5 +1,6 @@
-.respuesta{
-    width: 100%;
+.buton{
+    
+    width: 400px;
     background-color: #fff;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -12,23 +13,7 @@
     text-align: center;
 }
 
-.respuesta_active{
-    width: 100%;
-    background-color:#364257;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    padding: 7px;
-    color:aliceblue;
-    margin-bottom: 5px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.respuesta:hover{
+.buton:hover{
     cursor: pointer;
     padding: 10px;
     background-color:#364257;
