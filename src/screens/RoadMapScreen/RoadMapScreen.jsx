@@ -3,6 +3,7 @@ import { styles } from "./Style";
 import { useNavigate, useParams } from "react-router-dom";
 import Lesson from "../../components/Lesson/Lesson";
 import topics from "../../assets/Data/topics";
+import "./style.css";
 
 const RoadMapScreen = () => {
 const navigation = useNavigate();
@@ -14,9 +15,10 @@ useEffect(() => {
         const curtTopics = topics.filter((tp) => 
             tp.level == route.level
         )
-        curtTopics.filter((tp) => tp.genre == route.genre || tp.genre == 'none')
         
-        setUserTopic(curtTopics)
+        const topicGener = curtTopics.filter((tp) => tp.genre == route.genre || tp.genre == 'none')
+
+        setUserTopic(topicGener)
     }
     fetchTopics();
 },[])
@@ -24,15 +26,17 @@ useEffect(() => {
 
 
     return(
-        <div style={styles.container}>
-            <div style={styles.title}>
-                <h1 id="h1">Tu ruta de aprendizaje</h1>
-                <div style={styles.info}>
-                    <h1 style={styles.subtitle}>Tu nivel es: {route.level}</h1>
-                    <h1 style={styles.subtitle}>Género musical que seleccionaste: {route.genre} </h1>
+        <div style={styles.container} id="supercont">
+            <div className="titleGeneral">
+                    <h1 id="h1">Tu ruta de aprendizaje</h1>
+            </div>
+            <div style={styles.title} className="info">
+                <div style={styles.info} className="informacion">
+                    <h1 style={styles.subtitle}>Tu nivel es: <strong>{route.level}</strong></h1>
+                    <h1 style={styles.subtitle}>Género musical que seleccionaste: <strong>{route.genre}</strong> </h1>
                 </div>
             </div>
-            <div style={styles.Boxblue}>
+            <div style={styles.Boxblue} id="cont">
                 {userTopics.map((topic) => {
                     return(<Lesson text={topic.title}/>);
                 })}

@@ -8,7 +8,7 @@ export const styles = {
 
     },
     title: {
-      width: '50%',
+      width: '80%',
       marginBottom: '50px',
   
         
@@ -24,7 +24,6 @@ export const styles = {
         fontWeight: 'normal',
         textAlign: 'left',
         marginTop: '10px',
-        marginLeft:' 50px',
         padding:'5px',
         paddingLeft: '25px',
         paddingRight: '25px',
@@ -42,5 +41,5 @@ export const styles = {
         alignSelf: 'center',
         backgroundColor:'#E2ECFF',
         borderRadius: '20px'
-    }
-}
+    },
+};

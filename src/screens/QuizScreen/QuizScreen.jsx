@@ -14,8 +14,11 @@ const QuizScreen = () => {
   const [score, setScore] = useState(0);
   const [genre, setGenre] = useState([]);
   const [isDone, setIsDone] = useState(false);
+  const [isAnswered, setIsAnswered] = useState(false)
   const navigation = useNavigate();
 
+  // Voy a declarar una variable que nos dira si el botón estara activo y sera true si ya seleccionaste algo
+  
   const OnChoicePressed = (choice) => {
     if (!question) {
       return;
@@ -35,6 +38,7 @@ const QuizScreen = () => {
         }
       }
     });
+    setIsAnswered(true)
   };
 
   const getLevel = () => {
@@ -70,7 +74,7 @@ const QuizScreen = () => {
         break;
 
       case 0.7:
-        setLevel('Intermedio')
+        setLevel('Avanzado')
         break;
 
       case 0.8:
@@ -91,16 +95,17 @@ const QuizScreen = () => {
     if (!question) {
       return;
     }
+
     console.log(score);
     console.log(selectedChoices);
     setScore((scr) => scr + currSelectedChoice.score);
 
     const lastItemIndex = selectedChoices.length - 1;
     setGenre(selectedChoices[lastItemIndex].choice);
-
+    setIsAnswered(false)
     // Go to next question
     setQuestionIndex((index) => index + 1);
-
+    
     if (questionIndex == 8) {
       navigation(`/result/${level}`);
     }
@@ -127,7 +132,8 @@ const QuizScreen = () => {
               />
             );
           })}
-          <div onClick={onSubmitPressedPressed} className="continue">
+          
+          <div onClick={isAnswered ?  onSubmitPressedPressed : null } className={isAnswered ?  "continue" : "noContinue"}>
             <p>Continuar</p>
           </div>
 

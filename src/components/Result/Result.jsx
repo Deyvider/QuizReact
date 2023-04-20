@@ -26,7 +26,7 @@ const Result = ({ level }) => {
 
       <div className="titles">
         <h1 id="h1">Tu ruta de aprendizaje</h1>
-        <p className="sub-title">Tu nivel es: {level}</p>
+        <p className="sub-title">Tu nivel es: <strong>{level}</strong></p>
       </div>
 
       <div className="square-blue">

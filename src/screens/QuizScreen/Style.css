@@ -53,6 +53,37 @@
     margin-top: 15px;
 }
 
+.continue:hover{
+    background-color: #3d5785;
+}
+
+.noContinue{
+    width: 100%;
+    background-color: #515152;
+    color: aliceblue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
 .progress{
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+      width: 80vw;
+      height: 90vh;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 16px;
+    }
+  }

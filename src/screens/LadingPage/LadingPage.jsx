@@ -7,7 +7,7 @@ import boyGuitar from "../../assets/Image/boyGuitar.jpg";
 const LadingPage = () => {
   const navigation = useNavigate();
   return (
-    <div>
+    <div className="superContener">
       <section className="contener">
         <div className="row">
           <nav className="navbar">

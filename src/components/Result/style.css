@@ -3,9 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100vw;
-    height: 100vh;
     padding-bottom: 20px;
 }
 
@@ -44,7 +42,7 @@
 .square-blue{
   background-color: #E2ECFF;
   width: 60%;
-  height: 70vh;
+  height: 60vh;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -77,15 +75,15 @@ h2{
 
 #btnContinue{
   background-color: #364257;
-  width: 400px;
-  height: 50px;
+  width: 900px;
+  height: 70px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   cursor: pointer;
-  margin: 5px;
+  margin-top: 5px;
   color: #E2ECFF;
   display: flex;
   text-align: center;
@@ -93,7 +91,7 @@ h2{
   align-items: center;
 }
 
-#btnContinue:hover{
+/* #btnContinue:hover{
   cursor: pointer;
   padding: 10px;
   background-color:#364257;
@@ -101,7 +99,43 @@ h2{
   color: white;
   font-weight: 700;
   font-size: 20px;
+} */
+
+@media only screen and (max-width: 768px) {
+
+  #h1{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 25px;
+  }
+
+  .sub-title{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+  }
+
+  .square-blue{
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
+  #btnContinue{
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+  }
+
 }
+
 
 /* #btnContinue_active{
   width: 100%;

@@ -1,0 +1,34 @@
+.informacion{
+  margin-left: 68px;
+  
+}
+@media screen and (max-width: 768px) {
+  #supercont {
+    align-items: center;
+    font-size: 24px; /* Disminuimos el tamaño de fuente para que se vea mejor en pantallas pequeñas */
+  }
+
+  .info {
+    margin: 0 auto;
+  }
+
+  .info h1{
+    text-align: center;
+  }
+
+  .titleGeneral{
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  
+  .informacion {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 100%; /* Hacemos que el ancho del elemento sea del 100% para que ocupe todo el ancho disponible */ 
+  }
+
+  #cont {
+    margin: 0; /* Eliminamos los márgenes laterales para que el contenedor ocupe todo el ancho disponible */
+    padding: 0 10px; /* Agregamos un pequeño padding lateral para que el contenido no quede demasiado pegado a los bordes de la pantalla */
+  }
+}
