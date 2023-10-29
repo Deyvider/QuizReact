@@ -11,10 +11,10 @@ const QuizScreen = () => {
   const [selectedChoices, setSelectedChoices] = useState([]);
   const [currSelectedChoice, setCurrSelectedChoice] = useState({});
   const [level, setLevel] = useState("");
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(0.1);
   const [genre, setGenre] = useState([]);
   const [isDone, setIsDone] = useState(false);
-  const [isAnswered, setIsAnswered] = useState(false)
+  const [isAnswered, setIsAnswered] = useState(false);
   const navigation = useNavigate();
 
   // Voy a declarar una variable que nos dira si el botón estara activo y sera true si ya seleccionaste algo
@@ -45,48 +45,18 @@ const QuizScreen = () => {
     if (!score) {
       return;
     }
-    switch (score) {
-      case 0:
-        setLevel('Principiante')
+    switch (true) {
+      case (score >= 0 && score <= 0.3):
+        setLevel('Principiante');
         break;
-
-      case 0.1:
-        setLevel('Principiante')
+      case (score > 0.3 && score <= 0.6):
+        setLevel('Intermedio');
         break;
-
-      case 0.2:
-        setLevel('Principiante')
+      case (score > 0.6 && score <= 1):
+        setLevel('Avanzado');
         break;
-
-      case 0.3:
-        setLevel('Intermedio')
-        break;
-
-      case 0.4:
-        setLevel('Intermedio')
-        break;
-
-      case 0.5:
-        setLevel('Intermedio')
-        break;
-      case 0.6:
-        setLevel('Intermedio')
-        break;
-
-      case 0.7:
-        setLevel('Avanzado')
-        break;
-
-      case 0.8:
-        setLevel('Avanzado')
-        break;
-      case 0.9:
-        setLevel('Avanzado')
-        break;
-      case 1:
-        setLevel('Avanzado')
-
       default:
+        // Si el valor del score está fuera del rango de 0 a 1, podrías lanzar una excepción o manejar el error de otra forma.
         break;
     }
   };
